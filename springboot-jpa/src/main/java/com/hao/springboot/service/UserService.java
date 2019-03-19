@@ -35,4 +35,9 @@ public class UserService
 	{
 		return userDao.findByEmail(email);
 	}
+
+	public List<User> queryUserByEmailAndId(String email, Integer id)
+	{
+		return userDao.findByEmailAndId(email, id);
+	}
 }

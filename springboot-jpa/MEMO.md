@@ -2,6 +2,17 @@
 
 ### Springboot SpringDataJpa
 
+創建table  
+CREATE TABLE `USER` (  
+       `ID` int(11) NOT NULL AUTO_INCREMENT,  
+       `EMAIL` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,  
+       `PASSWORD` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,  
+       `ADDRESS` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,  
+       `CELLPHONE` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,  
+       `CREATE_DATE` datetime DEFAULT NULL,  
+       PRIMARY KEY (`ID`)  
+     ) ;  
+***     
 add application.properties  
 #mysql連線設定  
 spring.datasource.url=jdbc:mysql://localhost:3306/springboot  

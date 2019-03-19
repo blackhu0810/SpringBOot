@@ -35,4 +35,10 @@ public class SpringDataJpaController
 	{
 		return userService.queryUserByEmail(email);
 	}
+
+	@RequestMapping("/queryUserByEmailAndId")
+	public List<User> queryUserByEmail(@RequestParam String email, @RequestParam Integer id)
+	{
+		return userService.queryUserByEmailAndId(email, id);
+	}
 }
